@@ -1,7 +1,7 @@
 interface SetLike {
-	setlike<long>;
+  setlike<long>;
 };
 
 interface ReadOnlySetLike {
-	readonly setlike<long>;
+  readonly setlike<long>;
 };

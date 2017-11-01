@@ -820,7 +820,7 @@
     }
 
     var noninherited_attribute = function(store) {
-      var w = all_ws(store, "pea"), 
+      var w = all_ws(store, "pea"),
         grabbed = [],
         ret = {
           type: "attribute",
@@ -842,7 +842,7 @@
       }
       return rest;
     }
-    
+
     var nonspecial_operation = function(store) {
       all_ws(store, "pea");
       var ret = {

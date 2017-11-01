@@ -13,9 +13,11 @@ INDENT TABS: .gitmodules
 INDENT TABS: app-uri/*
 INDENT TABS: conformance-checkers/*
 INDENT TABS: content-security-policy/*
+INDENT TABS: css/.gitmodules
 INDENT TABS: custom-elements/*
 INDENT TABS: old-tests/*
 INDENT TABS: pointerlock/*
+INDENT TABS: resources/webidl2/.gitmodules
 INDENT TABS: shadow-dom/*
 INDENT TABS: svg/import/*
 INDENT TABS: tools/*
@@ -110,6 +112,7 @@ PARSE-FAILED:dom/nodes/Document-createElement-namespace-tests/empty.svg
 PARSE-FAILED:dom/nodes/Document-createElement-namespace-tests/empty.xhtml
 PARSE-FAILED:dom/nodes/Document-createElement-namespace-tests/minimal_html.svg
 PARSE-FAILED:dom/nodes/Document-createElement-namespace-tests/minimal_html.xhtml
+CR AT EOL:resources/webidl2/test/syntax/idl/documentation-dos.widl
 
 # These have undefined entities; should probably find a way to define them
 PARSE-FAILED:ext-xhtml-pubid/the-xhtml-syntax/parsing-xhtml-documents/xhtml-pubid-1.xhtml
@@ -125,6 +128,10 @@ W3C-TEST.ORG:subresource-integrity/refresh-header.js.headers
 
 # semi-legitimate use of console.*
 CONSOLE:console/*
+CONSOLE:resources/check-layout-th.js
+CONSOLE:resources/chromium/*
+CONSOLE:resources/idlharness.js
+CONSOLE:resources/webidl2/*
 CONSOLE:streams/resources/test-utils.js
 CONSOLE:service-workers/service-worker/resources/navigation-redirect-other-origin.html
 CONSOLE:service-workers/service-worker/navigation-redirect.https.html
@@ -266,6 +273,10 @@ SET TIMEOUT: XMLHttpRequest/xmlhttprequest-timeout-reused.html
 SET TIMEOUT: XMLHttpRequest/resources/init.htm
 SET TIMEOUT: XMLHttpRequest/resources/xmlhttprequest-timeout.js
 
+# generate_tests implementation and sample usage
+GENERATE_TESTS:resources/test/tests/generate-callback.html
+GENERATE_TESTS:resources/testharness.js
+
 # generate_tests usage (should be got rid of)
 GENERATE_TESTS: 2dcontext/drawing-images-to-the-canvas/*
 GENERATE_TESTS: css/css-shapes/shape-outside/values/*
@@ -338,6 +349,10 @@ GENERATE_TESTS: shadow-dom/untriaged/shadow-trees/upper-boundary-encapsulation/w
 
 # Intentional use of setTimeout
 SET TIMEOUT: html/webappapis/timers/*
+SET TIMEOUT: resources/chromium/*
+SET TIMEOUT: resources/test/tests/api-tests-1.html
+SET TIMEOUT: resources/test/tests/worker.js
+SET TIMEOUT: resources/testharness.js
 
 # setTimeout use in reftests
 SET TIMEOUT: acid/acid3/test.html
@@ -351,7 +366,6 @@ W3C-TEST.ORG:.travis.yml
 
 # Git submodules are not currently scanned
 *:tools/*
-*:resources/*
 *:css/tools/apiclient/*
 *:css/tools/w3ctestlib/*
 
@@ -446,7 +460,6 @@ NON-EXISTENT-REF: css/css-masking/clip-path-svg-content/clip-path-clip-rule-008.
 
 
 ## Whitespace rules that we can't enforce yet
-INDENT TABS: css/.gitmodules
 INDENT TABS: css/compositing/*
 INDENT TABS: css/CSS2/*
 INDENT TABS: css/css-align/*
@@ -1007,6 +1020,7 @@ CSS-COLLIDING-TEST-NAME: css/cssom/interfaces.html
 # TODO https://github.com/w3c/web-platform-tests/issues/5770
 MISSING-LINK: css/geometry/*.worker.js
 
+WEBIDL2.JS:resources/webidl2/*
 WEBIDL2.JS:.gitmodules
 
 # Manual test that uses console.logs for feedback

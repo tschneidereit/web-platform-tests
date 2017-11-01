@@ -66,7 +66,7 @@
         return err;
 
 
-    
+
     // validate UsbChooserService_GetPermission_Params.deviceFilters
     err = messageValidator.validateArrayPointer(offset + codec.kStructHeaderSize + 0, 8, new codec.PointerTo(device_manager$.UsbDeviceFilter), false, [0], 0);
     if (err !== validator.validationError.NONE)
@@ -122,7 +122,7 @@
         return err;
 
 
-    
+
     // validate UsbChooserService_GetPermission_ResponseParams.result
     err = messageValidator.validateStructPointer(offset + codec.kStructHeaderSize + 0, device$.UsbDeviceInfo, true);
     if (err !== validator.validationError.NONE)

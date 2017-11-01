@@ -86,7 +86,7 @@
 
 
 
-    
+
     // validate UsbDeviceFilter.serialNumber
     err = messageValidator.validateStructPointer(offset + codec.kStructHeaderSize + 8, string16$.String16, true);
     if (err !== validator.validationError.NONE)
@@ -165,7 +165,7 @@
         return err;
 
 
-    
+
     // validate UsbEnumerationOptions.filters
     err = messageValidator.validateArrayPointer(offset + codec.kStructHeaderSize + 0, 8, new codec.PointerTo(UsbDeviceFilter), false, [0], 0);
     if (err !== validator.validationError.NONE)
@@ -221,7 +221,7 @@
         return err;
 
 
-    
+
     // validate UsbDeviceManager_GetDevices_Params.options
     err = messageValidator.validateStructPointer(offset + codec.kStructHeaderSize + 0, UsbEnumerationOptions, true);
     if (err !== validator.validationError.NONE)
@@ -277,7 +277,7 @@
         return err;
 
 
-    
+
     // validate UsbDeviceManager_GetDevices_ResponseParams.results
     err = messageValidator.validateArrayPointer(offset + codec.kStructHeaderSize + 0, 8, new codec.PointerTo(device$.UsbDeviceInfo), false, [0], 0);
     if (err !== validator.validationError.NONE)
@@ -334,14 +334,14 @@
         return err;
 
 
-    
+
     // validate UsbDeviceManager_GetDevice_Params.guid
     err = messageValidator.validateStringPointer(offset + codec.kStructHeaderSize + 0, false)
     if (err !== validator.validationError.NONE)
         return err;
 
 
-    
+
     // validate UsbDeviceManager_GetDevice_Params.deviceRequest
     err = messageValidator.validateInterfaceRequest(offset + codec.kStructHeaderSize + 8, false)
     if (err !== validator.validationError.NONE)
@@ -407,7 +407,7 @@
         return err;
 
 
-    
+
     // validate UsbDeviceManager_SetClient_Params.client
     err = messageValidator.validateInterface(offset + codec.kStructHeaderSize + 0, false);
     if (err !== validator.validationError.NONE)
@@ -463,7 +463,7 @@
         return err;
 
 
-    
+
     // validate UsbDeviceManagerClient_OnDeviceAdded_Params.deviceInfo
     err = messageValidator.validateStructPointer(offset + codec.kStructHeaderSize + 0, device$.UsbDeviceInfo, false);
     if (err !== validator.validationError.NONE)
@@ -519,7 +519,7 @@
         return err;
 
 
-    
+
     // validate UsbDeviceManagerClient_OnDeviceRemoved_Params.deviceInfo
     err = messageValidator.validateStructPointer(offset + codec.kStructHeaderSize + 0, device$.UsbDeviceInfo, false);
     if (err !== validator.validationError.NONE)
